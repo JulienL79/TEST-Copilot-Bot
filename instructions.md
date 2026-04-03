@@ -57,6 +57,7 @@ updated_at: <updated_at>
 
 1. Lire le thread Slack complet
 2. Définir :
+   - Title = message initial du thread (pour identifier le fichier à mettre à jour)
    - updated_at = date de l'instant présent (new Date()) au format ISO
 
 3. Récupérer uniquement les réponses avec la réaction :pencil2:
@@ -66,7 +67,7 @@ updated_at: <updated_at>
    - reformuler proprement
 
 5. Trouver le fichier Markdown existant correspondant au Title :
-   - même règle de nommage (slug)
+   - même règle de nommage (slug : lowercase, espaces remplacés par "_", extension .md)
 
 6. Modifier :
    - section Answer
