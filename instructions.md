@@ -5,7 +5,7 @@
 
 ---
 
-## Quand tu reçois l'instruction "create-faq" tu dois :
+## Quand tu reçois l'instruction "create-item" tu dois :
 
 1. Lire le thread Slack complet
 2. Définir :
@@ -53,7 +53,7 @@ updated_at: <updated_at>
 
 ---
 
-## Quand tu reçois l'instruction "update-faq" tu dois :
+## Quand tu reçois l'instruction "update-item" tu dois :
 
 1. Lire le thread Slack complet
 2. Définir :
