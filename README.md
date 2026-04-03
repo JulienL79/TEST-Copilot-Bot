@@ -10,14 +10,14 @@ Toutes les instructions de comportement de l'agent sont définies dans [`instruc
 
 ## Commandes supportées
 
-### `create-faq`
+### `create-item`
 
 Crée une nouvelle entrée FAQ à partir d'un thread Slack. L'agent :
 1. Lit le thread Slack complet
 2. Génère un fichier Markdown structuré
 3. Crée une branche `add_<slug>` et ouvre une Pull Request vers `main`
 
-### `update-faq`
+### `update-item`
 
 Met à jour une entrée FAQ existante à partir d'un thread Slack. L'agent :
 1. Lit le thread Slack complet
