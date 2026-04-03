@@ -2,6 +2,7 @@
 
 > Ce fichier contient toutes les directives que l'agent Copilot doit suivre.
 > **L'agent doit lire ce fichier en priorité avant d'exécuter toute commande.**
+> **L'agent ne peut pas modifier ce fichier.**
 
 ---
 
