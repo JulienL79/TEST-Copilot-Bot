@@ -53,7 +53,7 @@ updated_at: <updated_at>
 
 ---
 
-## Quand tu reçois l'instruction "faq-patch" tu dois :
+## Quand tu reçois l'instruction "update-faq" tu dois :
 
 1. Lire le thread Slack complet
 2. Définir :
