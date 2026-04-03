@@ -7,6 +7,7 @@ Ce repository est géré par un agent Copilot automatisé.
 > ⚠️ **L'agent doit impérativement lire le fichier [`instructions.md`](./instructions.md) pour connaître ses directives.**
 
 Toutes les instructions de comportement de l'agent sont définies dans [`instructions.md`](./instructions.md).
+Ce fichier n'est pas modifiable par l'agent.
 
 ## Commandes supportées
 
