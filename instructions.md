@@ -1,3 +1,10 @@
+# Instructions de l'agent Copilot
+
+> Ce fichier contient toutes les directives que l'agent Copilot doit suivre.
+> **L'agent doit lire ce fichier en priorité avant d'exécuter toute commande.**
+
+---
+
 ## Quand tu reçois l'instruction "create-faq" tu dois :
 
 1. Lire le thread Slack complet
