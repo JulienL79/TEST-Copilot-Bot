@@ -6,7 +6,7 @@ Bienvenue dans la FAQ du projet ! Vous trouverez ici les réponses aux questions
 
 ## Questions générales
 
-### A quoi sert un `pay_branch` ?
+### À quoi sert un `pay_branch` ?
 
 Sert à faire à manger. 🍳
 
