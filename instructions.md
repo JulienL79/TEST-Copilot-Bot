@@ -1,4 +1,4 @@
-Quand tu reçois l'instruction "create-faq" tu dois :
+## Quand tu reçois l'instruction "create-faq" tu dois :
 
 1. Lire le thread Slack complet
 2. Définir :
@@ -14,6 +14,7 @@ Quand tu reçois l'instruction "create-faq" tu dois :
 
 5. Générer un fichier Markdown avec ce format :
 
+```
 ---
 slack_thread_ts: <slack_thread_ts>
 title: <Title>
@@ -26,6 +27,7 @@ updated_at: <updated_at>
 
 ## Answer
 <Answer>
+```
 
 6. Nom du fichier :
    - slug du Title (lowercase, espaces remplacés par "_")
@@ -42,11 +44,9 @@ updated_at: <updated_at>
    - le lien du PR
    - un résumé des changements
 
-
-
 ---
 
-Quand tu reçois l'instruction "faq-patch" tu dois :
+## Quand tu reçois l'instruction "faq-patch" tu dois :
 
 1. Lire le thread Slack complet
 2. Définir :
