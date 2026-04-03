@@ -6,7 +6,7 @@
 
 ---
 
-## Quand tu reçois l'instruction "create-item" tu dois :
+## Quand tu reçois l'instruction `create-md` tu dois :
 
 1. Lire le thread Slack complet
 2. Définir :
@@ -54,7 +54,7 @@ updated_at: <updated_at>
 
 ---
 
-## Quand tu reçois l'instruction "update-item" tu dois :
+## Quand tu reçois l'instruction `update-md` tu dois :
 
 1. Lire le thread Slack complet
 2. Définir :
