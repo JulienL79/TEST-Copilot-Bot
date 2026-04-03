@@ -66,7 +66,7 @@ updated_at: <updated_at>
    - concaténer ces réponses
    - reformuler proprement
 
-5. Trouver le fichier Markdown existant correspondant au Title :
+5. Rerouver le fichier Markdown existant correspondant au Title ou au sujet traité :
    - même règle de nommage (slug)
 
 6. Modifier :
