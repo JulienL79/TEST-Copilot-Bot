@@ -17,7 +17,7 @@ Crée une nouvelle entrée FAQ à partir d'un thread Slack. L'agent :
 2. Génère un fichier Markdown structuré
 3. Crée une branche `add_<slug>` et ouvre une Pull Request vers `main`
 
-### `faq-patch`
+### `update-faq`
 
 Met à jour une entrée FAQ existante à partir d'un thread Slack. L'agent :
 1. Lit le thread Slack complet
