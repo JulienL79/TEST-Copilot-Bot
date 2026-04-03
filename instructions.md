@@ -50,12 +50,11 @@ Quand tu reçois l'instruction "update-faq" tu dois :
 
 1. Lire le thread Slack complet
 2. Définir :
-   - Title = message initial du thread (en reformulant plus proprement la question au besoin)
    - updated_at = date de l'instant présent (new Date()) au format ISO
 
 3. Récupérer uniquement les réponses avec la réaction :pencil2:
 
-4. Construire un nouvel "Answer" :
+4. Construire un NOUVEL "Answer" :
    - concaténer ces réponses
    - reformuler proprement
 
@@ -66,12 +65,14 @@ Quand tu reçois l'instruction "update-faq" tu dois :
    - section Answer
    - champ updated_at (date actuelle)
 
-7. Créer une branche :
+7. Créer une NOUVELLE branche :
    - "update_" + slug du Title
+   - ne pas utiliser la branche existante de la PR précédente
 
 8. Commit les changements
 
-9. Ouvrir une Pull Request vers main
+9. Ouvrir une NOUVELLE Pull Request vers main
+  - ne pas mettre à jour l'ancienne PR
 
 10. Répondre dans le thread Slack avec :
    - le lien du PR
