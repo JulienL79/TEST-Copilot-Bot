@@ -13,10 +13,60 @@ Ce fichier n'est pas modifiable par l'agent.
 
 ### `create-faq`
 
-Crée une nouvelle entrée FAQ à partir d'un thread Slack. L'agent :
-1. Lit le thread Slack complet
-2. Génère un fichier Markdown structuré
-3. Crée une branche `add_<slug>` et ouvre une Pull Request vers `main`
+Crée une nouvelle entrée FAQ. Deux modes d'utilisation sont disponibles :
+
+#### Via l'API GitHub (GitHub Actions `workflow_dispatch`)
+
+Déclenche le workflow [`create-item`](.github/workflows/create-item.yml) depuis l'interface GitHub ou via l'API :
+
+```bash
+gh workflow run create-item.yml \
+  --field title="Ma question ?" \
+  --field answer="La réponse." \
+  --field slack_thread_ts="1743670223.000000"
+```
+
+Ou via l'API REST GitHub :
+
+```bash
+curl -X POST \
+  -H "Authorization: Bearer <TOKEN>" \
+  -H "Accept: application/vnd.github+json" \
+  https://api.github.com/repos/JulienL79/TEST-Copilot-Bot/actions/workflows/create-item.yml/dispatches \
+  -d '{
+    "ref": "main",
+    "inputs": {
+      "title": "Ma question ?",
+      "answer": "La réponse.",
+      "slack_thread_ts": "1743670223.000000"
+    }
+  }'
+```
+
+Le workflow crée automatiquement le fichier FAQ, une branche `add_<slug>` et ouvre une Pull Request vers `main`.
+
+#### Via le script CLI local
+
+```bash
+./create-item.sh \
+  --title "Ma question ?" \
+  --answer "La réponse." \
+  --slack-ts "1743670223.000000"
+```
+
+**Options :**
+
+| Option | Requis | Description |
+|--------|--------|-------------|
+| `--title` | ✅ | Titre / question de l'entrée FAQ |
+| `--answer` | ✅ | Corps de la réponse |
+| `--slack-ts` | ❌ | Horodatage du thread Slack d'origine |
+
+#### Via l'agent Copilot (Slack)
+
+L'agent Copilot lit le thread Slack complet et :
+1. Génère un fichier Markdown structuré
+2. Crée une branche `add_<slug>` et ouvre une Pull Request vers `main`
 
 ### `update-faq`
 
